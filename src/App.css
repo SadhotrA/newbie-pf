@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.text {
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  text-align: center;
+  line-height: 1;
+}
+
+/* For very small screens */
+@media (max-width: 360px) {
+  .container {
+    align-items: flex-start; /* Change from center to top alignment */
+    padding-top: 20vh; /* Add vertical offset from top */
+  }
+  /* .text {
+    font-size: 1.75rem;
+  } */
+}
